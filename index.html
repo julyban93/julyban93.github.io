@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   :root {
     --ink: #1e1e1b;
     --ink-muted: #555550;
@@ -19,9 +18,7 @@
     --accent: #3c3489;
     --font: 'Atkinson Hyperlegible', Arial, sans-serif;
   }
-
   html { scroll-behavior: smooth; }
-
   body {
     font-family: var(--font);
     font-size: 17px;
@@ -29,8 +26,6 @@
     color: var(--ink);
     background: var(--paper);
   }
-
-  /* ── NAV ── */
   nav {
     position: sticky;
     top: 0;
@@ -50,7 +45,6 @@
   }
   nav a {
     font-size: 12px;
-    font-weight: 400;
     letter-spacing: 0.09em;
     text-transform: uppercase;
     text-decoration: none;
@@ -61,22 +55,17 @@
   .nav-name {
     font-size: 15px;
     font-weight: 700;
-    letter-spacing: 0;
     text-transform: none;
+    letter-spacing: 0;
     color: var(--ink);
     margin-right: auto;
   }
-
-  /* ── LAYOUT ── */
   main {
     max-width: 780px;
     margin: 0 auto;
     padding: 0 2rem 6rem;
   }
-
   section { padding-top: 4rem; }
-
-  /* ── HERO ── */
   .hero {
     padding-top: 5rem;
     padding-bottom: 3rem;
@@ -92,7 +81,6 @@
   }
   .hero-sub {
     font-size: 13px;
-    font-weight: 400;
     letter-spacing: 0.07em;
     text-transform: uppercase;
     color: var(--ink-muted);
@@ -122,8 +110,6 @@
     font-size: 13px;
     color: var(--ink-muted);
   }
-
-  /* ── SECTION HEADINGS ── */
   .section-label {
     font-size: 11px;
     font-weight: 700;
@@ -134,8 +120,6 @@
     padding-bottom: 0.6rem;
     border-bottom: 1px solid var(--rule);
   }
-
-  /* ── CV ENTRIES ── */
   .entry {
     display: grid;
     grid-template-columns: 130px 1fr;
@@ -163,11 +147,6 @@
     margin-bottom: 0.4rem;
     line-height: 1.6;
   }
-  .entry-content p {
-    font-size: 15px;
-    color: var(--ink-muted);
-    line-height: 1.7;
-  }
   .entry-content .tag {
     display: inline-block;
     font-size: 11px;
@@ -180,19 +159,12 @@
     margin-right: 4px;
     margin-top: 6px;
   }
-
-  /* ── FOOTER ── */
   footer {
     border-top: 1px solid var(--rule);
     padding: 2.5rem 2rem;
     text-align: center;
   }
-  footer p {
-    font-size: 12px;
-    color: var(--ink-faint);
-  }
-
-  /* ── RESPONSIVE ── */
+  footer p { font-size: 12px; color: var(--ink-faint); }
   @media (max-width: 600px) {
     .entry { grid-template-columns: 1fr; gap: 0.2rem; }
     .entry-year { font-size: 12px; padding-top: 0; }
@@ -215,12 +187,11 @@
 
 <main id="top">
 
-  <!-- ── HERO ── -->
   <section class="hero">
     <p class="hero-sub">PhD Student · English Program · The Graduate Center, CUNY</p>
     <h1>July Ban</h1>
     <p class="hero-bio">
-      Ju Ly Ban writes about spiritual and literary kinship. Her work has appeared in <em>Chicago Review</em>, <em>Women's Studies Quarterly</em>, and <em>Distributaries: New Writing in the Public Humanities</em> at the CUNY Graduate Center.
+      Ju Ly Ban writes about literary and spiritual kinship. Her work has appeared in <em>Chicago Review</em>, <em>Women's Studies Quarterly</em>, and <em>Distributaries: New Writing in the Public Humanities</em> at the CUNY Graduate Center.
     </p>
     <div class="contact-bar">
       <a href="mailto:jban@gradcenter.cuny.edu">jban@gradcenter.cuny.edu</a>
@@ -228,10 +199,8 @@
     </div>
   </section>
 
-  <!-- ── EDUCATION ── -->
   <section id="education">
     <p class="section-label">Education &amp; Appointments</p>
-
     <div class="entry">
       <div class="entry-year">2022–present</div>
       <div class="entry-content">
@@ -239,7 +208,6 @@
         <p class="where">The Graduate Center, City University of New York</p>
       </div>
     </div>
-
     <div class="entry">
       <div class="entry-year">2023–present</div>
       <div class="entry-content">
@@ -247,13 +215,10 @@
         <p class="where">Baruch College, City University of New York</p>
       </div>
     </div>
-
   </section>
 
-  <!-- ── PUBLICATIONS ── -->
   <section id="publications">
     <p class="section-label">Publications</p>
-
     <div class="entry">
       <div class="entry-year">Forthcoming 2025</div>
       <div class="entry-content">
@@ -262,7 +227,6 @@
         <span class="tag">review</span>
       </div>
     </div>
-
     <div class="entry">
       <div class="entry-year">May 2025</div>
       <div class="entry-content">
@@ -271,13 +235,10 @@
         <span class="tag">essay</span>
       </div>
     </div>
-
   </section>
 
-  <!-- ── PRESENTATIONS ── -->
   <section id="presentations">
     <p class="section-label">Conference Presentations</p>
-
     <div class="entry">
       <div class="entry-year">Oct. 2025</div>
       <div class="entry-content">
@@ -286,7 +247,6 @@
         <span class="tag">conference</span>
       </div>
     </div>
-
     <div class="entry">
       <div class="entry-year">Mar. 2025</div>
       <div class="entry-content">
@@ -295,13 +255,10 @@
         <span class="tag">conference</span>
       </div>
     </div>
-
   </section>
 
-  <!-- ── LEADERSHIP ── -->
   <section id="leadership">
     <p class="section-label">Academic &amp; Community Leadership</p>
-
     <div class="entry">
       <div class="entry-year">2025–present</div>
       <div class="entry-content">
@@ -309,7 +266,6 @@
         <p class="where">Master of Arts in Women's and Gender Studies, City University of New York (CUNY)</p>
       </div>
     </div>
-
     <div class="entry">
       <div class="entry-year">2024–present</div>
       <div class="entry-content">
@@ -317,7 +273,6 @@
         <p class="where">CLAGS: The Center for LGBTQ Studies, City University of New York (CUNY)</p>
       </div>
     </div>
-
   </section>
 
 </main>
